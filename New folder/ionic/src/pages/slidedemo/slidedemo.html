@@ -1,0 +1,209 @@
+
+<ion-content class="tutorial-page">
+
+  <ion-slides pager>
+   <ion-slide>
+      <ion-header>
+          <ion-navbar color="dark">
+              <button ion-button menuToggle="left" start>
+                  <ion-icon name="menu"></ion-icon>
+                </button>
+          </ion-navbar>
+        </ion-header>
+        
+        
+        <ion-content color="dark">
+          <ion-item-group>
+              <ion-item-divider color="dark">Ticket #F7154310 <ion-icon name="print" item-right></ion-icon> <ion-icon name="camera" item-right></ion-icon></ion-item-divider>
+            
+            </ion-item-group>
+        
+          <ion-grid class="secondry-content">
+              <ion-row>
+        
+                  <ion-col>
+                      <ion-item class="{{data.properties['Load_Type'].class}}">
+                          <!-- <ion-label >{{data.properties["Load_Type"].lable}}</ion-label> -->
+                          <ion-input [(ngModel)]="data.properties['Load_Type'].value" placeholder="{{data.properties['Load_Type'].lable}}" type="data.properties['Load_Type'].type"></ion-input>
+                          <ion-select   interface="popover">
+                              <ion-option class="ion-op"  value="data.properties['Load_Type'].values['0']">{{data.properties["Load_Type"].values["0"]}}</ion-option>
+                              <ion-option value="data.properties['Load_Type'].values['1']">{{data.properties["Load_Type"].values["1"]}}</ion-option>
+                          </ion-select>
+                      </ion-item>
+                        
+                        <ion-item class="{{data.properties['Company Name'].class}}">
+                          <!-- <ion-label fixed>{{data.properties["Company Name"].lable}}</ion-label> -->
+                          <ion-input placeholder="{{data.properties['Company Name'].lable}}" [(ngModel)]="data.properties['Company Name'].value" type="data.properties['Company Name'].type"></ion-input>
+                        </ion-item>
+                        
+                        <ion-item class="{{data.properties['Consigner'].class}}">
+                          <!-- <ion-label fixed>{{data.properties["Consigner"].lable}}</ion-label> -->
+                          <ion-input placeholder="{{data.properties['Consigner'].lable}}" [(ngModel)]="data.properties['Consigner'].value" type="data.properties['Consigner'].type"></ion-input>
+                        </ion-item>
+                        
+                         <br><br><br> 
+                        <ion-item class="{{data.properties['Dagerous Godds'].class}}">
+                            <!-- <ion-label>{{data.properties["Dagerous Godds"].lable}}</ion-label> -->
+                            <!-- <ion-input type="data.properties['Dagerous Godds'].type"></ion-input> -->
+                            <ion-select placeholder="{{data.properties['Dagerous Godds'].lable}}" [(ngModel)]="data.properties['Dagerous Godds'].value" value="data.properties['Dagerous Godds'].lable" interface="popover">
+                                
+                              <ion-option value="data.properties['Dagerous Godds'].values['0']">{{data.properties["Dagerous Godds"].values["0"]}}</ion-option>
+                                <ion-option value="data.properties['Dagerous Godds'].values['1']">{{data.properties["Dagerous Godds"].values["1"]}}</ion-option>
+                            </ion-select>
+                        </ion-item>
+        
+                        <ion-item class="{{data.properties['Take Selection'].class}}">
+                            <!-- <ion-label>{{data.properties["Take Selection"].lable}}</ion-label> -->
+                            <!-- <ion-input type="data.properties['Take Selection'].type"></ion-input> -->
+                            <ion-select placeholder="{{data.properties['Take Selection'].lable}}" value="data.properties['Take Selection'].lable" interface="popover" >
+                                <ion-option value="data.properties['Take Selection'].values['0']">{{data.properties["Take Selection"].values["0"]}}</ion-option>
+                                <ion-option value="data.properties['Take Selection'].values['1']">{{data.properties["Take Selection"].values["1"]}}</ion-option>
+                            </ion-select>
+                        </ion-item>               
+                  </ion-col>
+              </ion-row>
+              
+              <ion-row>
+                  <ion-col>            
+                      <ion-item class="{{data.properties['Ticket Type'].class}}">
+                          <!-- <ion-label>{{data.properties["Ticket Type"].lable}}</ion-label> -->
+                          <ion-select placeholder="{{data.properties['Ticket Type'].lable}}" interface="popover">
+                              <ion-option value="data.properties['Ticket Type'].values['0']">{{data.properties["Ticket Type"].values["0"]}}</ion-option>
+                              <ion-option value="data.properties['Ticket Type'].values['1']">{{data.properties["Ticket Type"].values["1"]}}</ion-option>
+                          </ion-select>
+                      </ion-item>
+                  
+                      <ion-item class="{{data.properties['Product Type'].class}}">
+                          <!-- <ion-label>{{data.properties["Product Type"].lable}}</ion-label> -->
+                          <ion-select placeholder="{{data.properties['Product Type'].lable}}" interface="popover">
+                              <ion-option value="data.properties['Product Type'].values['0']">{{data.properties["Product Type"].values["0"]}}</ion-option>
+                              <ion-option value="data.properties['Product Type'].values['1']">{{data.properties["Product Type"].values["1"]}}</ion-option>
+                          </ion-select>
+                      </ion-item>
+                  </ion-col>             
+                </ion-row>
+                 <ion-row>
+                      <ion-col>            
+                          <ion-item class="{{data.properties['Start Guage'].class}}">
+                              <!-- <ion-label>{{data.properties["Start Guage"].lable}}</ion-label> -->
+                              <ion-select placeholder="{{data.properties['Start Guage'].lable}}" interface="popover">
+                                  <ion-option value="data.properties['Start Guage'].values['0']">{{data.properties["Start Guage"].values["0"]}}</ion-option>
+                                  <ion-option value="data.properties['Start Guage'].values['1']">{{data.properties["Start Guage"].values["1"]}}</ion-option>
+                              </ion-select>
+                          </ion-item>
+                                 
+                          <ion-item class="{{data.properties['Finish Guage'].class}}">
+                              <!-- <ion-label>{{data.properties["Finish Guage"].lable}}</ion-label> -->
+                              <ion-select placeholder="{{data.properties['Finish Guage'].lable}}" interface="popover">
+                                  <ion-option value="data.properties['Finish Guage'].values['0']">{{data.properties["Finish Guage"].values["0"]}}</ion-option>
+                                  <ion-option value="data.properties['Finish Guage'].values['1']">{{data.properties["Finish Guage"].values["1"]}}</ion-option>
+                              </ion-select>
+                          </ion-item>
+                      </ion-col>             
+                    </ion-row>
+        
+                    <button ion-button (click)="after_click()" color="primary">Secondary</button>
+                  </ion-grid>
+                </ion-content>
+
+
+   </ion-slide>
+    <ion-slide *ngFor="let slide of slides">
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button color="primary">Skip</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <img [src]="slide.image" class="slide-image"/>
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p [innerHTML]="slide.description"></p>
+    </ion-slide>
+    <ion-slide>
+      <ion-toolbar>
+      </ion-toolbar>
+      <img src="assets/imgs/ica-slidebox-img-4.png" class="slide-image"/>
+      <h2 class="slide-title">Ready to Play?</h2>
+      <button ion-button large clear icon-end color="primary">
+        Continue
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+
+
+
+    <ion-slide>
+        <ion-header>
+            <ion-navbar color="dark">
+                <button ion-button menuToggle="left" start>
+                    <ion-icon name="menu"></ion-icon>
+                  </button>
+            </ion-navbar>
+          </ion-header>
+          
+          
+          <ion-content color="dark">
+            <ion-item-group>
+                <ion-item-divider color="dark">User Information forms <ion-icon name="print" item-right></ion-icon> <ion-icon name="camera" item-right></ion-icon></ion-item-divider>
+              
+              </ion-item-group>
+          
+            <ion-grid class="secondry-content">
+                <ion-row>
+          
+                    <ion-col>
+                        <ion-item class="{{data1.properties['User Name'].class}}">
+                            <!-- <ion-label >{{data.properties["Load_Type"].lable}}</ion-label> -->
+                            <ion-input [(ngModel)]="data1.properties['User Name'].value" placeholder="{{data1.properties['User Name'].lable}}" type="data1.properties['User Name'].type"></ion-input>
+                        </ion-item>
+                          
+                          <ion-item class="{{data1.properties['Password'].class}}">
+                            <!-- <ion-label fixed>{{data.properties["Company Name"].lable}}</ion-label> -->
+                            <ion-input placeholder="{{data1.properties['Password'].lable}}" [(ngModel)]="data1.properties['Password'].value" type="data1.properties['Password'].type"></ion-input>
+                          </ion-item>
+                          
+                          <ion-item class="{{data1.properties['Gender'].class}}">
+                            <ion-label fixed>{{data1.properties["Gender"].lable}}</ion-label>
+                            
+                            <ion-select placeholder="{{data1.properties['Gender'].lable}}" [(ngModel)]="data1.properties['Gender'].value" value="data.properties['Gender'].lable" okText="Okay" cancelText="Dismiss">
+                                  
+                                <ion-option value="data1.properties['Gender'].values['0']">{{data1.properties["Gender"].values["0"]}}</ion-option>
+                                  <ion-option value="data1.properties['Gender'].values['1']">{{data1.properties["Gender"].values["1"]}}</ion-option>
+                                  <ion-option value="data1.properties['Gender'].values['2']">{{data1.properties["Gender"].values["2"]}}</ion-option>
+                      </ion-select>
+                          </ion-item>
+                          
+                          
+                          <ion-item class="{{data1.properties['Education'].class}}">
+                              <ion-label fixed>{{data1.properties["Education"].lable}}</ion-label>
+                              <!-- <ion-input type="data.properties['Dagerous Godds'].type"></ion-input> -->
+                              <ion-select placeholder="{{data1.properties['Education'].lable}}" [(ngModel)]="data1.properties['Education'].value" value="data1.properties['Education'].lable" okText="Okay" cancelText="Dismiss" interface="popover">
+                                  
+                                <ion-option value="data1.properties['Education'].values['0']">{{data1.properties["Education"].values["0"]}}</ion-option>
+                                  <ion-option value="data1.properties['Education'].values['1']">{{data1.properties["Education"].values["1"]}}</ion-option>
+                                  <ion-option value="data1.properties['Education'].values['2']">{{data1.properties["Education"].values["2"]}}</ion-option>
+                              </ion-select>
+                          </ion-item>
+          
+                          <ion-item class="{{data1.properties['Cast'].class}}">
+                              <ion-label fixed>{{data1.properties["Cast"].lable}}</ion-label>
+                              <!-- <ion-input type="data.properties['Take Selection'].type"></ion-input> -->
+                              <ion-select  placeholder="{{data1.properties['Cast'].lable}}" value="data1.properties['Cast'].lable" okText="Okay" cancelText="Dismiss">
+                                  <ion-option value="data1.properties['Cast'].values['0']">{{data1.properties["Cast"].values["0"]}}</ion-option>
+                                  <ion-option value="data1.properties['Cast'].values['1']">{{data1.properties["Cast"].values["1"]}}</ion-option>
+                                  <ion-option value="data1.properties['Cast'].values['2']">{{data1.properties["Cast"].values["2"]}}</ion-option>
+                              </ion-select>
+                          </ion-item>               
+                    </ion-col>
+                </ion-row>
+                
+          
+                      <button ion-button (click)="after_click()" color="primary">Submit</button>
+                    </ion-grid>
+                  </ion-content>
+  
+  
+     </ion-slide>
+
+
+  </ion-slides>
+</ion-content>
